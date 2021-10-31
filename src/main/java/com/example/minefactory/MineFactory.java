@@ -1,5 +1,6 @@
 package com.example.minefactory;
 
+import com.example.minefactory.init.ModBlocks;
 import com.example.minefactory.init.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,6 +25,8 @@ public class MineFactory
         eventBus.addListener(this::doClientStuff);
 
         ModItems.ITEMS.register(eventBus);
+        ModBlocks.BLOCKS.register(eventBus);
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 

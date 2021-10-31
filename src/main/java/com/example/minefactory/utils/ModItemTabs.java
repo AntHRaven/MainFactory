@@ -1,13 +1,13 @@
 package com.example.minefactory.utils;
 
-import com.example.minefactory.init.ModItems;
+import com.example.minefactory.init.ModBlocks;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fmllegacy.RegistryObject;
 
 public class ModItemTabs {
-    public static CreativeModeTab creativeModeTab(String idTab, RegistryObject<Item> icon) {
+    public static CreativeModeTab creativeModeTab(String idTab, RegistryObject<Block> icon) {
         return new CreativeModeTab(idTab) {
             @Override
             public ItemStack makeIcon() {
@@ -16,5 +16,5 @@ public class ModItemTabs {
         };
     }
 
-    public static CreativeModeTab MOD_MATERIALS_TAB = creativeModeTab("mod_materials_tab", ModItems.TITAN);
+    public static CreativeModeTab MOD_MATERIALS_TAB = creativeModeTab("mod_materials_tab", ModBlocks.TITAN_BLOCK);
 }

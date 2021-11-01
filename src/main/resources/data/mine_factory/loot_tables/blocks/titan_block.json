@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mine_factory:titan_block"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "forge:can_tool_perform_action",
+          "action": "pickaxe_dig"
+        }
+      ],
+      "functions": []
+    }
+  ]
+}

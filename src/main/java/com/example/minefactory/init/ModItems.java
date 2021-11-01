@@ -11,8 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModItems {
     private final static Item.Properties PROPERTIES = new Item.Properties()
-            .tab(ModItemTabs.MOD_MATERIALS_TAB)
-            .fireResistant();
+            .tab(ModItemTabs.MOD_MATERIALS_TAB);
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create
             (ForgeRegistries.ITEMS, MineFactory.MOD_ID);

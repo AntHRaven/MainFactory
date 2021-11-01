@@ -11,11 +11,9 @@
       ],
       "conditions": [
         {
-          "condition": "forge:can_tool_perform_action",
-          "action": "pickaxe_dig"
+          "condition": "minecraft:survives_explosion"
         }
-      ],
-      "functions": []
+      ]
     }
   ]
 }
